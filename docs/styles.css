@@ -4,7 +4,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.header{
+.header{          /*background*/
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/pgh.jpg);
@@ -42,7 +42,7 @@ nav img{
   font-size: 20px;
 }
 
-.main-nav ul li::after{
+.main-nav ul li::after{       /*creates blue line that'll appear under nav list element*/
   content: '';
   width: 0%;
   height: 2px;
@@ -52,7 +52,7 @@ nav img{
   transition: 0.2s;
 }
 
-.main-nav ul li:hover::after{
+.main-nav ul li:hover::after{     /* this makes the line appear when you hover over the element */
   width: 100%;
 }
 
@@ -75,11 +75,20 @@ nav img{
   font-size: 60px;
 }
 
-.button1{
+.text-box audio{
+  padding: 90px;
+}
+
+.text-box img{
+  max-width: 40vw;
+  padding: 20px;
+}
+
+.button1{           /*audacity project button*/
   display: inline-block;
   text-decoration: none;
   color: #fff700;
-  border: 1px solid #0044ff;
+  border: 5px solid #0044ff;
   padding: 100px 130px;
   font-size: 30px;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/audacity.png);
@@ -89,11 +98,11 @@ nav img{
   cursor: pointer;
 }
 
-.button2{
+.button2{             /*gimp project button*/
   display: inline-block;
   text-decoration: none;
   color: #fff700;
-  border: 1px solid #0044ff;
+  border: 5px solid #0044ff;
   padding: 100px 160px;
   font-size: 30px;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/gimp.png);
@@ -103,14 +112,14 @@ nav img{
   cursor: pointer;
 }
 
-.button1:hover{
-  border: 1px solid #3a6fff;
+.button1:hover{           /*makes button lighter with transitioning border when hovered over*/
+  border: 5px solid #3a6fff;
   background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4,9,30,0.6)), url(img/audacity.png);
   transition: 1s;
 }
 
-.button2:hover{
-  border: 1px solid #3a6fff;
+.button2:hover{           /*makes button lighter with transitioning border when hovered over*/
+  border: 5px solid #3a6fff;
   background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4,9,30,0.6)), url(img/gimp.png);
   transition: 1s;
 }

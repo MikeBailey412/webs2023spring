@@ -7,27 +7,43 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
   <section class="header">
     <nav>
       <a href="index.html"><img src="img/pitt.png"></a>
-      <div class="main-nav">
+      <div class="main-nav" id="mainNav">
+        <i class="fa fa-times" onclick="hide()"></i>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
         </ul>
       </div>
+      <i class="fa fa-bars" onclick="show()"></i>
     </nav>
     
     <div class="text-box">
       <h1>About Me</h1>
-      <p>I am a senior computer engineering student at the University of <br>
-        Pittsburgh. After graduation, I plan on getting into the semiconductor <br>
-        industry.  Some of my hobbies include golfing, weight lifting and watching movies.</p>
+      <p>I am a senior computer engineering student at the University of
+        Pittsburgh. After graduation, I plan on getting into the semiconductor
+        industry.  Some of my hobbies include golfing, weight lifting and watching movies.
     </div>
 
   </section>
+
+  <!-- JAVA fxns -->
+  <script>
+    var mainNav = document.getElementById("mainNav");
+
+    function show(){
+      mainNav.style.rigth = "0";
+    }
+
+    function hide(){
+      mainNav.style.rigth = "-200px";
+    }
+  </script>
 
 </body>
 </html>

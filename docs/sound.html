@@ -7,29 +7,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
   <section class="header">
     <nav>
       <a href="index.html"><img src="img/pitt.png"></a>
-      <div class="main-nav">
+      <div class="main-nav" id="mainNav">
+        <i class="fa fa-times" onclick="hide()"></i>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
         </ul>
       </div>
+      <i class="fa fa-bars" onclick="show()"></i>
+
     </nav>
     
     <div class="text-box">
       <h1>Soundscape Narrative</h1>
       <audio controls><source src="src/DayInTheLife.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio>
-      <p>This narrative is a day in the life and it takes you through a few <br>
-        different scenes. The first scene is me getting ready for the day and <br>
-        then making breakfast. The next scene is me going to the gym, and then <br>
+      <p>This narrative is a day in the life and it takes you through a few
+        different scenes. The first scene is me getting ready for the day and
+        then making breakfast. The next scene is me going to the gym, and then
         finally I end the day by practicing guitar.</p>
     </div>
 
   </section>
+
+  <!-- JAVA fxns -->
+  <script>
+    var mainNav = document.getElementById("mainNav");
+
+    function show(){
+      mainNav.style.rigth = "0";
+    }
+
+    function hide(){
+      mainNav.style.rigth = "-200px";
+    }
+  </script>
 
 </body>
 </html>

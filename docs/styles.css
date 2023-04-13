@@ -57,7 +57,7 @@ nav img{
 }
 
 .text-box{
-  width: 90%;
+  width: 75%;
   color: #fff700;
   position: absolute;
   top: 50%;
@@ -89,7 +89,7 @@ nav img{
   text-decoration: none;
   color: #fff700;
   border: 5px solid #0044ff;
-  padding: 100px 130px;
+  padding: 100px 110px;
   font-size: 30px;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/audacity.png);
   background-position: center;
@@ -103,7 +103,7 @@ nav img{
   text-decoration: none;
   color: #fff700;
   border: 5px solid #0044ff;
-  padding: 100px 160px;
+  padding: 100px 140px;
   font-size: 30px;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(img/gimp.png);
   background-position: center;
